@@ -150,6 +150,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/Lab8.dir/build.make CMakeFiles/Lab8.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+travelLog.o: travelLog.cpp.o
+
+.PHONY : travelLog.o
+
+# target to build an object file
+travelLog.cpp.o:
+	$(MAKE) -f CMakeFiles/Lab8.dir/build.make CMakeFiles/Lab8.dir/travelLog.cpp.o
+.PHONY : travelLog.cpp.o
+
+travelLog.i: travelLog.cpp.i
+
+.PHONY : travelLog.i
+
+# target to preprocess a source file
+travelLog.cpp.i:
+	$(MAKE) -f CMakeFiles/Lab8.dir/build.make CMakeFiles/Lab8.dir/travelLog.cpp.i
+.PHONY : travelLog.cpp.i
+
+travelLog.s: travelLog.cpp.s
+
+.PHONY : travelLog.s
+
+# target to generate assembly for a file
+travelLog.cpp.s:
+	$(MAKE) -f CMakeFiles/Lab8.dir/build.make CMakeFiles/Lab8.dir/travelLog.cpp.s
+.PHONY : travelLog.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,6 +189,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... travelLog.o"
+	@echo "... travelLog.i"
+	@echo "... travelLog.s"
 .PHONY : help
 
 

@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Lab8.dir/main.cpp.o"
+  "CMakeFiles/Lab8.dir/travelLog.cpp.o"
   "Lab8.pdb"
   "Lab8.exe"
   "libLab8.dll.a"

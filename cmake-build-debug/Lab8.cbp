@@ -83,6 +83,12 @@
 		<Unit filename="/cygdrive/c/Users/Iris L/CLionProjects/Lab8/main.cpp">
 			<Option target="Lab8"/>
 		</Unit>
+		<Unit filename="/cygdrive/c/Users/Iris L/CLionProjects/Lab8/travelLog.cpp">
+			<Option target="Lab8"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Iris L/CLionProjects/Lab8/travelLog.hpp">
+			<Option target="Lab8"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/Iris L/CLionProjects/Lab8/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
