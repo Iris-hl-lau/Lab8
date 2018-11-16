@@ -4,6 +4,9 @@
 
 #include "travelLog.hpp"
 
+/**
+ * Prints everybody in the city.
+ */
 void travelLog::print() {
     string person;
     vector<string> location;
@@ -19,6 +22,9 @@ void travelLog::print() {
     cout << endl;
 }
 
+/**
+ * Prints those who visited Krusty-Burger and Tavern.
+ */
 void travelLog::visited_kBurgerAndTavern() {
     string person;
     vector<string> location;
@@ -36,6 +42,9 @@ void travelLog::visited_kBurgerAndTavern() {
     cout << endl;
 }
 
+/**
+ * Prints those who have not visited Krusty-Burger and Home.
+ */
 void travelLog::not_visited_kBurgerAndHome() {
     string person;
     vector<string> location;
@@ -53,6 +62,10 @@ void travelLog::not_visited_kBurgerAndHome() {
     cout << endl;
 }
 
+/**
+ * Prints those who have visited Krusty-Burger and School,
+ * but have not visited Tavern and Home.
+ */
 void travelLog::visited_kBurgerAndSchool_not_tavernAndHome() {
     string person;
     vector<string> location;
@@ -74,6 +87,9 @@ void travelLog::visited_kBurgerAndSchool_not_tavernAndHome() {
     cout << endl;
 }
 
+/**
+ * Prints and remove those who have visited all places.
+ */
 void travelLog::remove_visited_allLocations() {
     string person;
     vector <string> location;

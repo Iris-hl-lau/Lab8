@@ -21,7 +21,7 @@ private:
     map<string, vector<string>> ppl_places;
 public:
     explicit travelLog(map<string, vector<string>> ppl_places) : ppl_places(ppl_places) {} //Constructor
-    void print(); //Prints everbody
+    void print(); //Prints everybody in the city
     void visited_kBurgerAndTavern(); //Prints those who visited Krusty-Burger and Tavern
     void not_visited_kBurgerAndHome(); //Prints those who have not visited Krusty-Burger and Home
     void visited_kBurgerAndSchool_not_tavernAndHome(); //Prints those who have visited Krusty-Burger and School, but have not visited Tavern and Home
