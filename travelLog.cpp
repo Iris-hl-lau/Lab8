@@ -2,6 +2,10 @@
 // Created by Iris L on 2018-11-16.
 //
 
+//
+// Created by Iris L on 2018-11-16.
+//
+
 #include "travelLog.hpp"
 
 /**
@@ -10,9 +14,9 @@
 void travelLog::print() {
     string person;
     vector<string> location;
-    for (auto it = ppl_places.begin(); it != ppl_places.end(); it++) {
-        person = it->first;
-        location = it->second;
+    for (auto &ppl_place : ppl_places) {
+        person = ppl_place.first;
+        location = ppl_place.second;
         cout << person << " ";
         for(const string &loc : location) {
             cout << loc << " ";
@@ -29,13 +33,13 @@ void travelLog::visited_kBurgerAndTavern() {
     string person;
     vector<string> location;
     cout << "Visited both Krusty-Burger and Tavern" << endl;
-    for (auto it = ppl_places.begin(); it != ppl_places.end(); it++) {
-        person = it->first;
-        location = it->second;
+    for (auto &ppl_place : ppl_places) {
+        person = ppl_place.first;
+        location = ppl_place.second;
 
         if(find(location.begin(), location.end(), "Krusty-Burger") != location.end()) {
             if(find(location.begin(), location.end(), "Tavern") != location.end()) {
-            cout << person << endl;
+                cout << person << endl;
             }
         }
     }
@@ -49,9 +53,9 @@ void travelLog::not_visited_kBurgerAndHome() {
     string person;
     vector<string> location;
     cout << "Did NOT visit Krusty-Burger and Home" << endl;
-    for (auto it = ppl_places.begin(); it != ppl_places.end(); it++) {
-        person = it->first;
-        location = it->second;
+    for (auto &ppl_place : ppl_places) {
+        person = ppl_place.first;
+        location = ppl_place.second;
 
         if(find(location.begin(), location.end(), "Krusty-Burger") == location.end()) {
             if(find(location.begin(), location.end(), "Home") == location.end()) {
@@ -64,15 +68,15 @@ void travelLog::not_visited_kBurgerAndHome() {
 
 /**
  * Prints those who have visited Krusty-Burger and School,
- * but have not visited Tavern and Home.
+ * and have not visited Tavern and Home.
  */
 void travelLog::visited_kBurgerAndSchool_not_tavernAndHome() {
     string person;
     vector<string> location;
     cout << "Visited Krusty-Burger and School but did NOT visit Tavern and Home \n";
-    for (auto it = ppl_places.begin(); it != ppl_places.end(); it++) {
-        person = it->first;
-        location = it->second;
+    for (auto &ppl_place : ppl_places) {
+        person = ppl_place.first;
+        location = ppl_place.second;
 
         if(find(location.begin(), location.end(), "Krusty-Burger") != location.end()) {
             if (find(location.begin(), location.end(), "School") != location.end()) {
