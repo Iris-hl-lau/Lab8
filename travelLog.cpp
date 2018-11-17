@@ -2,10 +2,6 @@
 // Created by Iris L on 2018-11-16.
 //
 
-//
-// Created by Iris L on 2018-11-16.
-//
-
 #include "travelLog.hpp"
 
 /**
